@@ -1,0 +1,38 @@
+.MyBike{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+#LeftWheel{
+transform-box:fill-box;
+transform-origin: center;
+animation: nirvrithiRotation 0.7s linear infinite;
+}
+@keyframes nirvrithiRotation{
+from{
+transform: rotate(0deg);
+}
+to{
+transform: rotate(360deg);
+}
+}
+
+#RightWheel, #Background{
+transform-box:fill-box;
+transform-origin: center;
+animation: nirvrithiRotation 0.7s linear infinite;
+}
+
+#Biker, #Hat{
+	animation: updown 2s ease infinite alternate;
+	transform-origin: bottom;
+}
+@keyframes updown{
+	from{
+		transform:rotateX(0deg);
+	}
+	to{
+		transform:rotateX(25deg);
+	}
+}
